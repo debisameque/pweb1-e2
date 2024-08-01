@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulários</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Q1 -->
+    <form onsubmit="validarCampo1(event)">
+      <fieldset>
+        <legend>Questão 01</legend>
+        <input type="text" placeholder="Digite algo" id="campo1"/>
+        <button type="submit" id="1">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q2 -->
+    <form>
+     <fieldset>
+       <legend>Questão 02</legend>
+       <input type="text" placeholder="Digite algo (Mín 1 caractere; Máx 10 caracteres)" id="campo2" required/>
+       <button type="submit" id="2" onclick="validarCampo2(event)">Enviar</button> 
+     </fieldset>  
+    </form>
+
+    <!-- Q3 -->
+    <form>
+      <fieldset>
+        <legend>Questão 03</legend>
+        <input type="text" placeholder="Digite um número" id="campo3" required/>
+        <button type="submit" id="3" onclick="validarCampo3(event)">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q4 -->
+    <form>
+      <fieldset>
+        <legend>Questão 04</legend>
+        <select id="selecao4" name="options" required>
+          <option value="default">Selecione uma fruta</option>
+          <option value="opcao1">Morango</option>
+          <option value="opcao2">Banana</option>
+          <option value="opcao3">Uva</option>
+          <option value="opcao4">Abacaxi</option>
+        </select>
+        <button type="submit" id="4" onclick="validarCampo4(event)">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q5 -->
+    <form>
+      <fieldset>
+        <legend>Questão 05</legend>
+        <label>Marque o checkbox:</label>
+        </br>
+        <input type="checkbox" id="campo5" />
+        </br>
+        <button type="submit" id="5" onclick="validarCampo5(event)">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q6 -->
+    <form>
+      <fieldset>
+        <legend>Questão 06</legend>
+        <label>Marque os checkboxes:</label>
+      </br>
+        <input type="checkbox" id="check01"/>
+        </br>
+        <input type="checkbox" id="check02"/>
+        </br>
+        <input type="checkbox" id="check03"/>
+        </br>
+        <input type="checkbox" id="check04"/>
+        </br>
+        <input type="checkbox" id="check05"/>
+        </br>
+        <button type="submit" id="6" onclick="validarCheckboxes6(event)">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q7 -->
+    <form>
+      <fieldset>
+        <legend>Questão 07</legend>
+        <label>Marque algum radio:</label>
+        </br>
+        <input type="radio" id="radio01"/>
+        </br>
+        <input type="radio" id="radio02"/>
+        </br>
+        <input type="radio" id="radio03"/>
+        </br>
+        <button type="submit" id="7" onclick="validarRadios7(event)">Enviar</button> 
+      </fieldset>  
+    </form>
+
+    <!-- Q8 -->
+    <form onsubmit="validarCampos8(event)">
+      <fieldset>
+        <legend>Questão 08</legend>
+        <label>Nome:</label>
+        <input type="text" placeholder="Digite seu nome" name="nome" id="nome8"/>
+        </br>
+        <label>Login:</label>
+        <input type="text" placeholder="Digite seu login" name="login" id="login8"/>
+        </br>
+        <label>Senha:</label>
+        <input type="text" placeholder="Digite sua senha" name="senha" id="senha8"/>
+        </br>
+        <button type="submit" id="8">Enviar</button> 
+      </fieldset>  
+    </form>
+
+  </body>
+  <script src="script.js"></script>
+</html>
